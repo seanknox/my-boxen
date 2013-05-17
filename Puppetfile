@@ -33,5 +33,19 @@ github "sudo",       "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-github "macvim",	"1.0.0"
-github "gitx",  "1.2.0"
+github "macvim",      "1.0.0"
+github "gitx",        "1.2.0"
+github "dropbox",     "1.1.0"
+github "postgresapp", "1.0.0"
+github "hipchat",     "1.0.4"
+github "tmux",        "1.0.2"
+github "iterm2",      "1.0.2"
+github "heroku",      "2.0.0"
+github "emacs",       "1.1.0"
+# github "xquartz",      "1.1.0"
+github "python",      "1.1.1"
+github "chrome",      "1.1.0"
+github "zsh",         "1.0.0"
+github "redis",       "1.0.0"
+github "riak",        "1.0.0"
+

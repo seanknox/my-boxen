@@ -72,9 +72,6 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
-  include macvim
-  include gitx::dev
-
   # common, useful packages
   package {
     [
@@ -88,4 +85,22 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  ### NEO GLOBAL CONFIG ###
+  include macvim
+  include gitx::dev
+  include dropbox
+  include postgresapp
+  include hipchat
+  include heroku
+  include chrome
+
+  $home     = "/Users/${::luser}"
+  $vimconfig = "${home}/vim-config"
+
+  repository { $vimconfig:
+    source => 'neo/vim-config'
+  }
+
 }
+
