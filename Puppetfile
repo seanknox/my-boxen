@@ -33,6 +33,7 @@ github "sudo",       "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+# github "osx",         "1.2.0"
 github "macvim",      "1.0.0"
 github "gitx",        "1.2.0"
 github "dropbox",     "1.1.0"

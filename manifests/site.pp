@@ -87,13 +87,10 @@ node default {
   }
 
   ### NEO GLOBAL CONFIG ###
-  include macvim
-  include gitx::dev
   include dropbox
   include postgresapp
   include hipchat
   include heroku
-  include chrome
 
   $home     = "/Users/${::luser}"
   $vimconfig = "${home}/vim-config"
