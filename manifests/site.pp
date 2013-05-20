@@ -94,6 +94,18 @@ node default {
 
   $home     = "/Users/${::luser}"
   $vimconfig = "${home}/vim-config"
+  $global_ruby_version = "1.9.3"
+  $global_nodejs_version = "v0.10.5"
+
+  # set global ruby version in rbenv
+  class { 'ruby::global':
+    version => $global_ruby_version
+  }
+
+  # set global nodejs version
+  class { 'nodejs::global':
+    version => $global_nodejs_version
+  }
 
   repository { $vimconfig:
     source => 'neo/vim-config'
