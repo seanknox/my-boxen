@@ -8,9 +8,7 @@ class people::seanknox::applications {
   include chrome::canary
   include macvim
   include gitx::dev
-
-  /*python needs xquartz, but doesn't appear to be working :/*/
-  /*include python*/
+  include python
 
   ruby::gem { "rails for 1.9.3":
     gem     => 'rails',
