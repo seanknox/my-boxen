@@ -2,13 +2,25 @@ class people::seanknox::applications {
 
   include tmux
   include iterm2::stable
-  include ruby::1_9_3
-  include ruby::2_0_0
   include chrome
   include chrome::canary
+  include dropbox
+  include kindle
   include macvim
   include gitx::dev
   include python
+  include mysql
+  include flux
+  include alfred
+  include skype
+  include transmission
+  include zsh
+  include onepassword
+
+  mysql::db { 'mydb': }
+
+  include ruby::1_9_3
+  include ruby::2_0_0
 
   ruby::gem { "rails for 1.9.3":
     gem     => 'rails',
