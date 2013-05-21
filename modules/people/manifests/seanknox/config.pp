@@ -1,6 +1,6 @@
 class people::seanknox::config {
 
-  osx::recovery_message { "If this Mac is found, please call and collect your reward ": }
+  osx::recovery_message { 'If this Mac is found, please call and collect your reward: 415-401-5633': }
 
   # Common OSX default configurations
   boxen::osx_defaults { 'Change software update check frequency to daily':
@@ -48,11 +48,13 @@ class people::seanknox::config {
 
   # Keyboard
   class { 'osx::global::key_repeat_delay':
-      delay => 10
+      delay => 0
   }
   class { 'osx::global::key_repeat_rate':
-    rate => 1.2
+    rate => 12
   }
+
+  include osx::global::disable_key_press_and_hold
 
   boxen::osx_defaults { 'Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)':
     key    => 'AppleKeyboardUIMode',
@@ -85,7 +87,7 @@ class people::seanknox::config {
   boxen::osx_defaults { 'Disable the "Are you sure you want to open this application?" dialog':
     key    => 'LSQuarantine',
     domain => 'com.apple.LaunchServices',
-    value  => 'true',
+    value  => 'false',
     user   => $::boxen_user
   }
 
