@@ -183,6 +183,11 @@ GITHUBTARBALL
   specs:
     stdlib (4.0.2)
 
+GITHUBTARBALL
+  remote: seanknox/puppet-vim
+  specs:
+    vim (1.0.4)
+
 DEPENDENCIES
   alfred (= 1.0.2)
   boxen (= 2.3.0)
@@ -219,6 +224,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   tmux (= 1.0.2)
   transmission (= 1.0.0)
+  vim (= 1.0.4)
   xquartz (= 1.1.0)
   zsh (= 1.0.0)
   zsh (= 1.0.0)

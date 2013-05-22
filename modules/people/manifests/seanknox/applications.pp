@@ -16,6 +16,7 @@ class people::seanknox::applications {
   include transmission
   include zsh
   include onepassword
+  include vim
 
   mysql::db { 'mydb': }
 

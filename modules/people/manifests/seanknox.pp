@@ -1,5 +1,6 @@
 class people::seanknox {
 
+  include people::seanknox::dotfiles
   include people::seanknox::applications
   include people::seanknox::config
 
