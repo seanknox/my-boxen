@@ -22,10 +22,6 @@ class people::seanknox::dotfiles {
     target  => "/Users/${::boxen_user}/dotfiles/zlogin",
     require => Repository["/Users/${::boxen_user}/dotfiles"]
   }
-  file { "/Users/${::boxen_user}/.zprezto":
-    target  => "/Users/${::boxen_user}/dotfiles/zprezto",
-    require => Repository["/Users/${::boxen_user}/dotfiles"]
-  }
   file { "/Users/${::boxen_user}/.zpreztorc":
     target  => "/Users/${::boxen_user}/dotfiles/zpreztorc",
     require => Repository["/Users/${::boxen_user}/dotfiles"]

@@ -10,6 +10,9 @@ class people::seanknox {
   repository { $dotfiles:
     source  => 'seanknox/dotfiles'
   }
+  repository { "/Users/${::boxen_user}/.zprezto":
+    source  => 'sorin-ionescu/prezto'
+  }
 
 }
 
