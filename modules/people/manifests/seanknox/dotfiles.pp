@@ -2,14 +2,14 @@ class people::seanknox::dotfiles {
 
 
   # Manage dotfiles with Boxen
-  file { "/Users/${::boxen_user}/.vimrc":
+  /* file { "/Users/${::boxen_user}/.vimrc":
     target  => "/Users/${::boxen_user}/vim-config/.vimrc",
     require => Repository["/Users/${::boxen_user}/vim-config"]
   }
   file { "/Users/${::boxen_user}/.gvimrc":
     target  => "/Users/${::boxen_user}/vim-config/.gvimrc",
     require => Repository["/Users/${::boxen_user}/vim-config"]
-  }
+  } */
   file { "/Users/${::boxen_user}/.gitconfig":
     target  => "/Users/${::boxen_user}/dotfiles/gitconfig",
     require => Repository["/Users/${::boxen_user}/dotfiles"]
