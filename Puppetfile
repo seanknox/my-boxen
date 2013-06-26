@@ -60,4 +60,5 @@ github "skype",             "1.0.2"
 github "transmission",      "1.0.0"
 github "zsh",               "1.0.0"
 github "onepassword",       "1.0.0"
+github "pow",               "1.0.0"
 

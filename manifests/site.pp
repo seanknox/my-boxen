@@ -50,7 +50,8 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  include dnsmasq
+  /*include dnsmasq*/
+  include pow
   include git
   include hub
   include nginx
