@@ -16,7 +16,36 @@ class people::seanknox::applications {
   include transmission
   include zsh
   include onepassword
+  include ctags
   /* include vim */
+
+  include sublime_text_2
+  sublime_text_2::package { 'Package Control':
+    source => 'wbond/sublime_package_control'
+  }
+  sublime_text_2::package { 'Soda Theme':
+    source => 'buymeasoda/soda-theme'
+  }
+  sublime_text_2::package { 'Rspec':
+    source => 'SublimeText/RSpec'
+  }
+  sublime_text_2::package { 'Apply Syntax':
+    source => 'facelessuser/ApplySyntax'
+  }
+  sublime_text_2::package { 'Git':
+    source => 'kemayo/sublime-text-2-git'
+  }
+  sublime_text_2::package { 'Ctags':
+    source => 'SublimeText/CTags'
+  }
+  sublime_text_2::package { 'Zen Coding':
+    source => 'sergeche/emmet-sublime'
+  }
+  file { "/Users/${::boxen_user}/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings":
+    target  => "/Users/${::boxen_user}/dotfiles/Preferences.sublime-settings",
+    require => Repository["/Users/${::boxen_user}/dotfiles"]
+  }
+
 
   mysql::db { 'mydb': }
 
