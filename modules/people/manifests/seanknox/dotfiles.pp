@@ -34,6 +34,10 @@ class people::seanknox::dotfiles {
     target  => "/Users/${::boxen_user}/dotfiles/zshrc",
     require => Repository["/Users/${::boxen_user}/dotfiles"]
   }
+  file { "/Users/${::boxen_user}/.pryrc":
+    target  => "/Users/${::boxen_user}/dotfiles/pryrc",
+    require => Repository["/Users/${::boxen_user}/dotfiles"]
+  }
 
 }
 
