@@ -38,6 +38,10 @@ class people::seanknox::dotfiles {
     target  => "/Users/${::boxen_user}/dotfiles/pryrc",
     require => Repository["/Users/${::boxen_user}/dotfiles"]
   }
+  file { "/Users/${::boxen_user}/.powconfig":
+    target  => "/Users/${::boxen_user}/dotfiles/powconfig",
+    require => Repository["/Users/${::boxen_user}/dotfiles"]
+  }
 
 }
 
