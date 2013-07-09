@@ -62,6 +62,10 @@ class people::seanknox::applications {
     source => 'sergeche/emmet-sublime',
     require => Package['SublimeText2']
   }
+  sublime_text_2::package { 'Sublime Linter':
+    source => 'SublimeLinter/SublimeLinter',
+    require => Package['SublimeText2']
+  }
 
   mysql::db { 'mydb': }
 
