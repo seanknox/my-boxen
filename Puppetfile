@@ -66,4 +66,6 @@ github "ctags",             "1.0.0"
 github "silver_searcher",   "0.0.1", :repo => "seanknox/puppet-silver_searcher"
 github "skitch",            "1.0.2", :repo => "seanknox/puppet-skitch"
 github "openssl",           "1.0.0"
+github "phantomjs",         "2.0.2"
+github "qt",                "1.0.0"
 

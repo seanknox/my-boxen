@@ -119,6 +119,11 @@ GITHUBTARBALL
     osx (1.3.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-phantomjs
+  specs:
+    phantomjs (2.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-postgresapp
   specs:
     postgresapp (1.0.0)
@@ -137,6 +142,11 @@ GITHUBTARBALL
   remote: boxen/puppet-python
   specs:
     python (1.2.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-qt
+  specs:
+    qt (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-redis
@@ -244,10 +254,12 @@ DEPENDENCIES
   onepassword (= 1.0.0)
   openssl (= 1.0.0)
   osx (= 1.3.2)
+  phantomjs (= 2.0.2)
   postgresapp (= 1.0.0)
   pow (= 1.0.0)
   property_list_key (= 0.1.0)
   python (= 1.2.1)
+  qt (= 1.0.0)
   redis (= 1.0.0)
   repository (= 2.2.0)
   riak (= 1.0.0)
