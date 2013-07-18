@@ -159,11 +159,6 @@ GITHUBTARBALL
     ruby (6.1.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-skitch
-  specs:
-    skitch (1.0.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-skype
   specs:
     skype (1.0.2)
@@ -214,6 +209,11 @@ GITHUBTARBALL
     silver_searcher (0.0.1)
 
 GITHUBTARBALL
+  remote: seanknox/puppet-skitch
+  specs:
+    skitch (1.0.2)
+
+GITHUBTARBALL
   remote: seanknox/puppet-vim
   specs:
     vim (1.0.4)
@@ -253,7 +253,7 @@ DEPENDENCIES
   riak (= 1.0.0)
   ruby (= 6.1.1)
   silver_searcher (= 0.0.1)
-  skitch (= 1.0.1)
+  skitch (= 1.0.2)
   skype (= 1.0.2)
   stdlib (= 4.0.2)
   sublime_text_2 (= 1.1.1)
