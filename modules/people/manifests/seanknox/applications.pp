@@ -22,11 +22,6 @@ class people::seanknox::applications {
   include openssl
   /* include vim */
 
-  /*move to a project*/
-  include redis
-  include phantomjs
-  include qt
-
   include sublime_text_2
 
   $sublime_package_dir = "/Users/${::boxen_user}/Library/Application Support/Sublime Text 2/Packages"
