@@ -69,6 +69,10 @@ class people::seanknox::applications {
     source => 'SublimeLinter/SublimeLinter',
     require => Package['SublimeText2']
   }
+  sublime_text_2::package { 'Nettuts+ Fetch':
+    source => 'weslly/Nettuts-Fetch',
+    require => Package['SublimeText2']
+  }
 
   mysql::db { 'mydb': }
 
