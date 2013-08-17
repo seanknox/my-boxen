@@ -90,7 +90,6 @@ node default {
     target => $boxen::config::repodir
   }
 
-  ### NEO GLOBAL CONFIG ###
   include dropbox
   include postgresapp
   include hipchat
