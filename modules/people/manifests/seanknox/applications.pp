@@ -20,6 +20,8 @@ class people::seanknox::applications {
   include silver_searcher
   include skitch
   include openssl
+  include cmake
+  include protobuf
   /* include vim */
 
   include sublime_text_2

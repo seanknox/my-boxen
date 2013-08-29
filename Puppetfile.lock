@@ -14,6 +14,11 @@ GITHUBTARBALL
     chrome (1.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-cmake
+  specs:
+    cmake (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-ctags
   specs:
     ctags (1.0.0)
@@ -144,6 +149,11 @@ GITHUBTARBALL
     property_list_key (0.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-protobuf
+  specs:
+    protobuf (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-python
   specs:
     python (1.2.1)
@@ -237,6 +247,7 @@ DEPENDENCIES
   alfred (= 1.1.1)
   boxen (= 2.3.5)
   chrome (= 1.1.0)
+  cmake (= 1.0.1)
   ctags (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.0)
@@ -264,6 +275,7 @@ DEPENDENCIES
   postgresapp (= 1.0.0)
   pow (= 1.0.0)
   property_list_key (= 0.1.0)
+  protobuf (= 1.0.0)
   python (= 1.2.1)
   qt (= 1.0.0)
   redis (= 1.0.0)
