@@ -91,7 +91,7 @@ node default {
   }
 
   include dropbox
-  include postgresapp
+  /*include postgresapp*/
   include hipchat
   include heroku
   /*include vim*/
