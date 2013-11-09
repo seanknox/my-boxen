@@ -1,17 +1,17 @@
 GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
-    alfred (1.1.1)
+    alfred (1.1.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (2.3.5)
+    boxen (3.3.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-chrome
   specs:
-    chrome (1.1.0)
+    chrome (1.1.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-cmake
@@ -44,19 +44,29 @@ GITHUBTARBALL
     flux (0.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-foreman
+  specs:
+    foreman (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
-    gcc (2.0.0)
+    gcc (2.0.100)
 
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (1.2.4)
+    git (1.2.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-gitx
   specs:
     gitx (1.2.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-go
+  specs:
+    go (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-heroku
@@ -71,12 +81,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.1.2)
+    homebrew (1.5.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
-    hub (1.0.0)
+    hub (1.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-imagemagick
@@ -86,7 +96,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.0.2)
+    iterm2 (1.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-kindle
@@ -106,17 +116,17 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
-    nginx (1.4.0)
+    nginx (1.4.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (3.2.5)
+    nodejs (3.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
   specs:
-    onepassword (1.0.0)
+    onepassword (1.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -126,7 +136,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (1.3.2)
+    osx (2.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -134,9 +144,9 @@ GITHUBTARBALL
     phantomjs (2.0.2)
 
 GITHUBTARBALL
-  remote: boxen/puppet-postgresapp
+  remote: boxen/puppet-pkgconfig
   specs:
-    postgresapp (1.0.0)
+    pkgconfig (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pow
@@ -144,24 +154,9 @@ GITHUBTARBALL
     pow (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-property_list_key
-  specs:
-    property_list_key (0.1.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-protobuf
   specs:
     protobuf (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-python
-  specs:
-    python (1.2.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-qt
-  specs:
-    qt (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-redis
@@ -181,7 +176,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (6.3.0)
+    ruby (6.7.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-skype
@@ -219,14 +214,14 @@ GITHUBTARBALL
     zsh (1.0.0)
 
 GITHUBTARBALL
-  remote: cprice404/puppetlabs-inifile
+  remote: puppetlabs/puppetlabs-inifile
   specs:
-    inifile (0.9.0)
+    inifile (1.0.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (4.0.2)
+    stdlib (4.1.0)
 
 GITHUBTARBALL
   remote: seanknox/puppet-silver_searcher
@@ -244,54 +239,52 @@ GITHUBTARBALL
     vim (1.0.4)
 
 DEPENDENCIES
-  alfred (= 1.1.1)
-  boxen (= 2.3.5)
-  chrome (= 1.1.0)
+  alfred (= 1.1.6)
+  boxen (= 3.3.4)
+  chrome (= 1.1.2)
   cmake (= 1.0.1)
   ctags (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.0)
   emacs (= 1.1.0)
   flux (= 0.0.1)
-  gcc (= 2.0.0)
-  git (= 1.2.4)
+  foreman (= 1.0.0)
+  gcc (= 2.0.100)
+  git (= 1.2.5)
   gitx (= 1.2.0)
+  go (= 1.0.0)
   heroku (= 2.0.0)
   hipchat (= 1.0.4)
-  homebrew (= 1.1.2)
-  hub (= 1.0.0)
+  homebrew (= 1.5.1)
+  hub (= 1.0.3)
   imagemagick (= 1.2.1)
-  inifile (= 0.9.0)
-  iterm2 (= 1.0.2)
+  inifile (= 1.0.0)
+  iterm2 (= 1.0.3)
   kindle (= 1.0.1)
   macvim (= 1.0.0)
   mysql (= 1.1.0)
-  nginx (= 1.4.0)
-  nodejs (= 3.2.5)
-  onepassword (= 1.0.0)
+  nginx (= 1.4.2)
+  nodejs (= 3.3.0)
+  onepassword (= 1.0.2)
   openssl (= 1.0.0)
-  osx (= 1.3.2)
+  osx (= 2.0.0)
   phantomjs (= 2.0.2)
-  postgresapp (= 1.0.0)
+  pkgconfig (= 1.0.0)
   pow (= 1.0.0)
-  property_list_key (= 0.1.0)
   protobuf (= 1.0.0)
-  python (= 1.2.1)
-  qt (= 1.0.0)
   redis (= 1.0.0)
   repository (= 2.2.0)
   riak (= 1.0.0)
-  ruby (= 6.3.0)
+  ruby (= 6.7.4)
   silver_searcher (= 0.0.1)
   skitch (= 1.0.2)
   skype (= 1.0.2)
-  stdlib (= 4.0.2)
+  stdlib (= 4.1.0)
   sublime_text_2 (= 1.1.1)
   sudo (= 1.0.0)
   tmux (= 1.0.2)
   transmission (= 1.0.0)
   vim (= 1.0.4)
   xquartz (= 1.1.0)
-  zsh (= 1.0.0)
   zsh (= 1.0.0)
 

@@ -4,49 +4,70 @@
 # default. This ensures at least the ability to construct a basic
 # environment.
 
-def github(name, version, options = nil)
-  options ||= {}
-  options[:repo] ||= "boxen/puppet-#{name}"
-  mod name, version, :github_tarball => options[:repo]
+# Shortcut for a module from GitHub's boxen organization
+def github(name, *args)
+  options ||= if args.last.is_a? Hash
+    args.last
+  else
+    {}
+  end
+
+  if path = options.delete(:path)
+    mod name, :path => path
+  else
+    version = args.first
+    options[:repo] ||= "boxen/puppet-#{name}"
+    mod name, version, :github_tarball => options[:repo]
+  end
+end
+
+# Shortcut for a module under development
+def dev(name, *args)
+  mod name, :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
 end
 
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "2.3.5"
+github "boxen", "3.3.4"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
 github "dnsmasq",    "1.0.0"
-github "gcc",        "2.0.0"
-github "git",        "1.2.4"
-github "homebrew",   "1.1.2"
-github "hub",        "1.0.0"
-github "inifile",    "0.9.0", :repo => "cprice404/puppetlabs-inifile"
-github "nginx",      "1.4.0"
-github "nodejs",     "3.2.5"
+github "foreman",    "1.0.0"
+github "gcc",        "2.0.100"
+github "git",        "1.2.5"
+github "go",         "1.0.0"
+github "homebrew",   "1.5.1"
+github "hub",        "1.0.3"
+github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
+github "nginx",      "1.4.2"
+github "nodejs",     "3.3.0"
+github "openssl",    "1.0.0"
+github "phantomjs",  "2.0.2"
+github "pkgconfig",  "1.0.0"
 github "repository", "2.2.0"
-github "ruby",       "6.3.0"
-github "stdlib",     "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
+github "ruby",       "6.7.4"
+github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
+github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-github "osx",               "1.3.2"
-github "property_list_key", "0.1.0"
+github "osx",               "2.0.0"
+# github "property_list_key", "0.1.0"
 github "macvim",            "1.0.0"
 github "gitx",              "1.2.0"
 github "dropbox",           "1.1.0"
-github "postgresapp",       "1.0.0"
+# github "postgresapp",       "1.0.0"
 github "hipchat",           "1.0.4"
 github "tmux",              "1.0.2"
-github "iterm2",            "1.0.2"
+github "iterm2",            "1.0.3"
 github "heroku",            "2.0.0"
 github "emacs",             "1.1.0"
-github "xquartz",           "1.1.0"
-github "python",            "1.2.1"
-github "chrome",            "1.1.0"
+# github "python",            "1.2.1"
+github "chrome",            "1.1.2"
 github "zsh",               "1.0.0"
 github "redis",             "1.0.0"
 github "riak",              "1.0.0"
@@ -55,19 +76,17 @@ github "vim",               "1.0.4", :repo => "seanknox/puppet-vim"
 # github "vim",               "1.0.3"
 github "kindle",            "1.0.1"
 github "flux",              "0.0.1"
-github "alfred",            "1.1.1"
+github "alfred",            "1.1.6"
 github "skype",             "1.0.2"
 github "transmission",      "1.0.0"
-github "zsh",               "1.0.0"
-github "onepassword",       "1.0.0"
+github "onepassword",       "1.0.2"
 github "pow",               "1.0.0"
 github "sublime_text_2",    "1.1.1"
 github "ctags",             "1.0.0"
 github "silver_searcher",   "0.0.1", :repo => "seanknox/puppet-silver_searcher"
 github "skitch",            "1.0.2", :repo => "seanknox/puppet-skitch"
-github "openssl",           "1.0.0"
-github "phantomjs",         "2.0.2"
-github "qt",                "1.0.0"
+# broken on mavericks
+# github "qt",                "1.0.0"
 github "imagemagick",       "1.2.1"
 github "cmake",             "1.0.1"
 github "protobuf",          "1.0.0"
