@@ -8,7 +8,7 @@ class people::seanknox::applications {
   include kindle
   include macvim
   include gitx::dev
-  # include python
+  include python
   include mysql
   include flux
   include alfred

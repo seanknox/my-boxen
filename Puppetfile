@@ -51,7 +51,7 @@ github "repository", "2.2.0"
 github "ruby",       "6.7.4"
 github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
-github "xquartz",    "1.1.0"
+github "xquartz",    "1.1.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
@@ -65,7 +65,7 @@ github "tmux",              "1.0.2"
 github "iterm2",            "1.0.3"
 github "heroku",            "2.1.1"
 github "emacs",             "1.1.0"
-# github "python",            "1.2.1"
+github "python",            "1.3.0"
 github "chrome",            "1.1.2"
 github "zsh",               "1.0.0"
 github "redis",             "1.1.0"
