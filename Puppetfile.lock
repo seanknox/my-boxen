@@ -191,7 +191,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-sublime_text_2
   specs:
-    sublime_text_2 (1.1.1)
+    sublime_text_2 (1.1.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
@@ -286,7 +286,7 @@ DEPENDENCIES
   skitch (= 1.0.2)
   skype (= 1.0.6)
   stdlib (= 4.1.0)
-  sublime_text_2 (= 1.1.1)
+  sublime_text_2 (= 1.1.2)
   sudo (= 1.0.0)
   tmux (= 1.0.2)
   transmission (= 1.0.0)
