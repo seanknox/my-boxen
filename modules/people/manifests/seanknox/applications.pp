@@ -1,5 +1,6 @@
 class people::seanknox::applications {
 
+  include virtualbox
   include tmux
   include iterm2::stable
   include chrome
